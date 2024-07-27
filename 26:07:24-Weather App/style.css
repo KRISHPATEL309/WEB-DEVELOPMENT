@@ -1,0 +1,11 @@
+
+.tab.currentTab{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+}
+
+.formContainer.active{
+    scale: 1;
+    opacity: 1;
+    display: flex;
+}
