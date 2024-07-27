@@ -1,0 +1,26 @@
+.box{
+    border: 1px solid black;
+    height: 100px;
+    width: 250px;
+    background-image: linear-gradient(to right,red,blue);
+    background-image: linear-gradient(to bottom,orange,white, green);
+}
+
+.mydiv{
+    border: 1px solid black;
+    height: 100px;
+    width: 250px;
+    margin-top: 10px;
+    background-image: radial-gradient(red,blue);
+}  
+
+.cdiv{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px; 
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: conic-gradient(red,blue);
+}

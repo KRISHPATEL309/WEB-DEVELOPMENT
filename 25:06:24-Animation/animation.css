@@ -1,0 +1,53 @@
+.container{
+    width: 100%;
+    height: 215px;
+    border: 2px solid red;
+    background-color: yellow;
+
+}
+
+.box{
+    height: 212px;
+    width: 212px;
+    border: 2PX solid black;
+    background-color: aqua;
+
+    animation-name: krish;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-direction: alternate;
+
+    animation-fill-mode: both;
+
+}
+
+@keyframes krish{
+    0%{
+        width: 212px;
+        background-color: orange;
+    }
+    /* 30%{
+        width: 35%;
+        background-color: aquamarine;
+    } */
+    50%{
+        width: 35%;
+        background-color: white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
+
+/* @keyframes krish {
+    from{
+        width: 212px;
+    }
+
+    to{
+        width: 800px;
+    }
+} */

@@ -1,0 +1,16 @@
+{
+  "name": "app",
+   "version": "0.0.0",
+   "license": "MIT",
+
+   "scripts": {
+      "server": "webpack-dashboard -- webpack-dev-server --inline --port 8080",
+      "webdriver-update": "webdriver-manager update"
+   },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.3"
+  }
+}

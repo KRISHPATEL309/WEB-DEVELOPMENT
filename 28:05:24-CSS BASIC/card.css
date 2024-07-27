@@ -1,0 +1,59 @@
+.card{
+    height: 350px;
+    width: 350px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px 10px 0px 20px;
+}
+
+img{
+    height: 200px;
+    width: 340px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+hr{
+    width: 75%;
+    margin-left: 0px;
+    border: 1px solid black;
+    margin-bottom: 0px;
+}
+
+#div{
+    margin-top: 0px;
+}
+
+#price{
+    font-size: 18px;
+    color:rgb(102, 116, 204);
+    margin-right: 8px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#old_price{
+    font-size: 15px;
+    color:rgb(119, 124, 133);
+    margin-right: 8px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#offer{
+    background-color: #1DD1A1;
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+}
