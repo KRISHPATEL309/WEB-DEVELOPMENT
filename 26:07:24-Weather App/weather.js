@@ -1,4 +1,4 @@
-const API_KEY = "168771779c71f3d64106d8a88376808a"
+const API_KEY = "e862a1fa33084e8f0a466e54462daa3d";
 
 const userTab =  document.querySelector("[data-userWeather]")
 const searchTab =  document.querySelector("[data-searchWeather]")
@@ -9,6 +9,7 @@ const grantAccessContainer = document.querySelector(
 );
 const loadingContainer = document.querySelector('.loadingContainer')
 const userInfoContainer = document.querySelector(".userInfoContainer")
+
 const notFound = document.querySelector('.errorContainer')
 const errorBtn = document.querySelector('[data-errorButton]')
 const errorText = document.querySelector('[data-errorText]')
@@ -18,6 +19,7 @@ let currentTab = userTab;
 
 currentTab.classList.add("currentTab")
 //ek kam baki he
+getFromSessionStorage();
 
 
 userTab.addEventListener('click', () => {
@@ -86,15 +88,13 @@ async function fetchWeatherInfo(coordinates){
         userInfoContainer.classList.add('active');
         renderWeatherInfo(data);
     } 
-    catch (error) {
+    catch (err) {
         loadingContainer.classList.remove('active');
-        //hw
-
-        loadingContainer.classList.remove('active');
-        userInfoContainer.classList.remove('active');
         notFound.classList.add('active');
-        errorText.innerText = `${err?.message}`;
-        errorBtn.style.display = "none";
+        errorImage.style.display = 'none';
+        errorText.innerText = `Error: ${err?.message}`;
+        errorBtn.style.display = 'block';
+        errorBtn.addEventListener("click", fetchWeatherInfo);
     }
 }
 
